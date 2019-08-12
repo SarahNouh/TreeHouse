@@ -1,0 +1,98 @@
+// @Author: sarahnouh
+// @Date:   2019-08-11T01:18:09+02:00
+// @Last modified by:   sarahnouh
+// @Last modified time: 2019-08-12T01:52:34+02:00
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+$light_gray: #777777;
+$mint_green: #7cc576;
+$md_screen: "1024px";
+$sm_screen: "768px";
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  padding: 12px 15px;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: $mint_green;
+}
+header {
+  padding: 1% 10%;
+  max-width: 100%;
+  overflow: AUTO;
+  color: $light_gray;
+  position: relative;
+  .logo {
+    width: 150px;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    @media (max-width: $sm_screen) {
+      width: 90px;
+      transform: none;
+      top: 20%;
+    }
+  }
+  .header-list {
+    display: inline-block;
+    float: right;
+    @media (max-width: $sm_screen) {
+      padding-left: 0;
+      margin-top: 40px;
+    }
+    .list-item {
+      list-style: none;
+      display: inline-block;
+      margin-right: 30px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 500;
+      @media (max-width: $sm_screen) {
+        margin-right: 4px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.img-carousel {
+  position: relative;
+  img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+    @media (max-width: $sm_screen) {
+      height: 240px;
+    }
+  }
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    @media (max-width: "1024px") {
+      font-size: 25px;
+    }
+    @media (max-width: $sm_screen) {
+      font-size: 12px;
+    }
+    .title {
+      margin-bottom: 15px;
+    }
+    .subtitle {
+      font-size: 0.8rem;
+    }
+  }
+}
