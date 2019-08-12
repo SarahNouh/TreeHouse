@@ -1,0 +1,29 @@
+// @Author: sarahnouh
+// @Date:   2019-08-12T03:02:25+02:00
+// @Last modified by:   sarahnouh
+// @Last modified time: 2019-08-12T03:02:38+02:00
+.overview {
+  padding: 40px 100px;
+  @media (max-width: $sm_screen) {
+    padding: 20px;
+  }
+  .title {
+    text-align: center;
+    margin: 65px 0;
+    color: $light_gray;
+    font-weight: 300;
+  }
+  .column-items {
+    text-align: center;
+    @media (min-width: $md_screen) {
+      column-count: 3;
+    }
+    .column {
+      margin: 0 20px;
+      .column-title {
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+}
