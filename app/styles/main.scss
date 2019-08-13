@@ -1,20 +1,22 @@
 // @Author: sarahnouh
 // @Date:   2019-08-11T01:18:09+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-12T03:05:23+02:00
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+// @Last modified time: 2019-08-12T17:40:23+02:00
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Slab&display=swap");
 
 //colour variables
 $light_gray: #777777;
 $mint_green: #7cc576;
+$silver: #cccccc;
 
 //Responsive screen sizes variables
 $md_screen: "1024px";
 $sm_screen: "768px";
 
-@import "./carousel.scss";
-@import "./header.scss";
-@import "./overview.scss";
+@import "./__carousel.scss";
+@import "./__header.scss";
+@import "./__learn-more.scss";
+@import "./__overview.scss";
 
 body {
   margin: 0;
@@ -22,10 +24,15 @@ body {
 }
 
 .btn {
-  padding: 12px 15px;
+  padding: 13px 18px;
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
   color: white;
   background-color: $mint_green;
+}
+p {
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.2px;
+  line-height: 22px;
 }
