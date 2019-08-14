@@ -1,0 +1,22 @@
+// @Author: sarahnouh
+// @Date:   2019-08-14T04:45:57+02:00
+// @Last modified by:   sarahnouh
+// @Last modified time: 2019-08-14T05:00:49+02:00
+.logos {
+  padding: 3% 30%;
+  column-count: 4;
+  @media (max-width: $md_screen) {
+    padding: 3% 22%;
+  }
+  @media (max-width: $md_screen) {
+    padding: 3% 12%;
+  }
+  img {
+    display: block;
+    width: auto;
+    height: 50px;
+    max-width: 90%;
+    object-fit: contain;
+    margin: auto;
+  }
+}

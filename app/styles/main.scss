@@ -1,7 +1,7 @@
 // @Author: sarahnouh
 // @Date:   2019-08-11T01:18:09+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-14T04:22:20+02:00
+// @Last modified time: 2019-08-14T04:46:48+02:00
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Slab&display=swap");
 
 //colour variables
@@ -21,6 +21,7 @@ $xl_screen: "2200px";
 @import "./__header.scss";
 @import "./__latest-project.scss";
 @import "./__learn-more.scss";
+@import "./__logos.scss";
 @import "./__overview.scss";
 
 body {
