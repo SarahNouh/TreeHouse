@@ -1,18 +1,31 @@
 // @Author: sarahnouh
 // @Date:   2019-08-12T03:02:25+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-12T17:40:18+02:00
+// @Last modified time: 2019-08-14T03:19:52+02:00
 .overview {
-  padding: 40px 100px;
+  padding: 80px 100px;
+  @media (min-width: $xl_screen) {
+    font-size: 35px;
+  }
   @media (max-width: $sm_screen) {
     padding: 20px;
   }
-  .title {
+  header {
     text-align: center;
-    margin: 65px 0;
-    color: $light_gray;
-    font-weight: 300;
+    margin-bottom: 65px;
+    font-size: 22px;
+    .title {
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      margin-top: 5px;
+      color: $light_gray;
+      font-weight: 300;
+      font-size: 0.8em;
+    }
   }
+
   .column-items {
     text-align: center;
     @media (min-width: $md_screen) {
@@ -26,7 +39,7 @@
       }
       .text {
         color: $light_gray;
-        font-size: 14px;
+        font-size: 1em;
       }
     }
   }
