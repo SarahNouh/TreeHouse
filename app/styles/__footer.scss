@@ -1,0 +1,125 @@
+// @Author: sarahnouh
+// @Date:   2019-08-14T05:15:45+02:00
+// @Last modified by:   sarahnouh
+// @Last modified time: 2019-08-14T16:52:28+02:00
+
+.footer {
+  .footer-content {
+    column-count: 3;
+    background-color: black;
+    color: white;
+    padding: 40px 80px;
+    @media (min-width: $xl_screen) {
+      font-size: 30px;
+    }
+    @media (max-width: $sm_screen) {
+      column-count: 1;
+    }
+    @media (max-width: $xs_screen) {
+      padding: 20px;
+    }
+  }
+  .footer-cols {
+    min-height: 170px;
+    @media (min-width: $xl_screen) {
+      min-height: 380px;
+    }
+    @media (max-width: $lg_screen) {
+      min-height: 295px;
+    }
+    @media (max-width: $sm_screen) {
+      border-bottom: 1px solid $silver;
+      min-height: auto;
+    }
+    .column-title {
+      text-transform: uppercase;
+    }
+  }
+  .footer-list {
+    padding-left: 0;
+    list-style: none;
+    .list-item {
+      font-family: "Roboto Slab", serif;
+      color: $silver;
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 20px;
+      .address {
+        margin: 0;
+      }
+      svg {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        &.address-svg {
+          top: 0;
+          transform: none;
+          @media (min-width: $xl_screen) {
+            top: 10px;
+          }
+        }
+        &.twitter-svg {
+          top: 6px;
+          transform: none;
+          @media (min-width: $xl_screen) {
+            top: 10px;
+          }
+        }
+      }
+      .hashtag {
+        color: white;
+        font-weight: 800;
+      }
+    }
+  }
+  .copyrights {
+    padding: 10px 80px;
+    background-color: white;
+    position: relative;
+    @media (max-width: $sm_screen) {
+      padding: 10px 20px;
+    }
+    .text {
+      @media (max-width: $sm_screen) {
+        font-size: 10px;
+      }
+    }
+    .social-media {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 40%;
+      @media (max-width: $md_screen) {
+        left: 420px;
+      }
+      @media (max-width: $sm_screen) {
+        left: auto;
+        right: 20px;
+      }
+      .social-media-icon {
+        display: inline-block;
+        width: 41px;
+        height: 40px;
+        background-repeat: no-repeat;
+        @media (max-width: $xs_screen) {
+          width: 20px;
+          height: 19px;
+          background-size: contain;
+        }
+      }
+      .twitter {
+        background-image: url("../images/twitter.png");
+      }
+      .facebook {
+        background-image: url("../images/facebook.png");
+      }
+      .pinterest {
+        background-image: url("../images/pinterest.png");
+      }
+      .google {
+        background-image: url("../images/google.png");
+      }
+    }
+  }
+}
