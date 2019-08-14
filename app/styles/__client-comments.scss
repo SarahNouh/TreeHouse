@@ -1,0 +1,96 @@
+// @Author: sarahnouh
+// @Date:   2019-08-14T16:56:08+02:00
+// @Last modified by:   sarahnouh
+// @Last modified time: 2019-08-14T19:21:37+02:00
+.client-comments {
+  padding: 3% 20%;
+  @media (min-width: $xl_screen) {
+    font-size: 28px;
+  }
+  @media (max-width: $lg_screen) {
+    padding: 3% 14%;
+  }
+  @media (max-width: $md_screen) {
+    padding: 3% 4%;
+  }
+  @media (max-width: $sm_screen) {
+    padding: 3% 18%;
+  }
+  header {
+    text-align: center;
+    font-size: 25px;
+    @media (min-width: $xl_screen) {
+      font-size: 35px;
+    }
+    @media (max-width: $sm_screen) {
+      font-size: 15px;
+    }
+    .title {
+      margin-bottom: 0;
+    }
+    .subtitle {
+      font-size: 0.8em;
+      margin-top: 5px;
+      color: $light_gray;
+    }
+  }
+  .comment {
+    position: relative;
+    margin-bottom: 40px;
+    svg {
+      width: 27%;
+      height: 27%;
+      @media (max-width: $sm_screen) {
+        width: 32%;
+        height: 32%;
+      }
+    }
+    .comment-content {
+      background-image: url("../images/comment.png");
+      max-width: 48%;
+      background-size: 100% 100%;
+      padding: 2% 10%;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 0;
+      .comment-text {
+        color: $light_gray;
+      }
+      .commenter {
+        color: $mint_green;
+      }
+      .comment-text,
+      .commenter {
+        @media (max-width: $sm_screen) {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        @media (max-width: $xs_screen) {
+          margin: 0;
+          font-size: 10px;
+        }
+      }
+    }
+    &.inverted {
+      padding-left: 72%;
+      @media (max-width: $md_screen) {
+        padding-left: 70%;
+      }
+      @media (max-width: $sm_screen) {
+        padding-left: 68%;
+      }
+      .comment-content {
+        right: auto;
+        left: 0%;
+        background-image: url("../images/inverted_comment.png");
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
