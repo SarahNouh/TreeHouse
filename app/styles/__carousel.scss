@@ -1,7 +1,7 @@
 // @Author: sarahnouh
 // @Date:   2019-08-12T03:04:05+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-12T03:04:23+02:00
+// @Last modified time: 2019-08-14T03:03:49+02:00
 .img-carousel {
   position: relative;
   img {
@@ -9,8 +9,11 @@
     max-width: 100%;
     object-fit: cover;
     max-height: 400px;
-    @media (max-width: $sm_screen) {
-      height: 240px;
+    @media (min-width: $xl_screen) {
+      max-height: 500px;
+    }
+    @media (max-width: $xs_screen) {
+      height: 280px;
     }
   }
   .carousel-content {
@@ -21,17 +24,22 @@
     text-align: center;
     transform: translate(-50%, -50%);
     font-size: 40px;
-    @media (max-width: "1024px") {
+    @media (min-width: $xl_screen) {
+      font-size: 60px;
+    }
+    @media (max-width: $md_screen) {
       font-size: 25px;
     }
     @media (max-width: $sm_screen) {
-      font-size: 12px;
+      font-size: 20px;
     }
     .title {
       margin-bottom: 15px;
+      line-height: 1.1em;
     }
     .subtitle {
-      font-size: 0.8rem;
+      font-size: 0.4em;
+      color: $silver;
     }
   }
 }
