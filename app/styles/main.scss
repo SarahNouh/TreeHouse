@@ -1,7 +1,7 @@
 // @Author: sarahnouh
 // @Date:   2019-08-11T01:18:09+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-12T17:40:23+02:00
+// @Last modified time: 2019-08-14T03:03:48+02:00
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Slab&display=swap");
 
 //colour variables
@@ -10,11 +10,15 @@ $mint_green: #7cc576;
 $silver: #cccccc;
 
 //Responsive screen sizes variables
-$md_screen: "1024px";
+$xs_screen: "425px";
 $sm_screen: "768px";
+$md_screen: "1024px";
+$lg_screen: "1200px";
+$xl_screen: "2200px";
 
 @import "./__carousel.scss";
 @import "./__header.scss";
+@import "./__latest-project.scss";
 @import "./__learn-more.scss";
 @import "./__overview.scss";
 
@@ -24,15 +28,33 @@ body {
 }
 
 .btn {
-  padding: 13px 18px;
-  border-radius: 20px;
+  padding: 1.1em 1.6em;
+  border-radius: 2em;
   border: none;
   text-transform: uppercase;
   color: white;
   background-color: $mint_green;
+  font-size: 0.3em;
 }
 p {
   font-family: "Roboto Slab", serif;
   letter-spacing: 0.2px;
   line-height: 22px;
+  @media (min-width: $xl_screen) {
+    line-height: 3rem;
+  }
+}
+
+a {
+  color: $mint_green;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  @media (min-width: $xl_screen) {
+    font-size: 30px;
+  }
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
