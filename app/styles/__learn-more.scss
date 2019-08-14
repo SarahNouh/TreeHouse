@@ -1,12 +1,15 @@
 // @Author: sarahnouh
 // @Date:   2019-08-12T03:13:33+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-13T02:37:51+02:00
+// @Last modified time: 2019-08-14T03:30:44+02:00
 .learn-more {
   background-image: url("../images/learn_more_bg.png");
   background-size: cover;
   position: relative;
   height: 450px;
+  @media (min-width: $xl_screen) {
+    height: 650px;
+  }
   @media (max-width: $sm_screen) {
     background-size: contain;
     height: 550px;
@@ -19,6 +22,10 @@
     top: 50%;
     transform: translateY(-50%);
     max-width: 400px;
+    @media (min-width: $xl_screen) {
+      font-size: 30px;
+      max-width: 36%;
+    }
     @media (max-width: $md_screen) {
       left: 45%;
     }
@@ -34,30 +41,33 @@
         color: $mint_green;
       }
     }
-    .list {
-      padding-left: 0;
-      font-family: "Roboto Slab", serif;
+  }
+  .list {
+    padding-left: 0;
+    font-family: "Roboto Slab", serif;
 
-      .list-item {
-        list-style: none;
-        margin: 20px 0;
-        &:before {
-          content: "";
-          display: inline-block;
-          background-image: url("../images/checkmark.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-          width: 30px;
-          height: 30px;
-          vertical-align: middle;
-          margin-right: 20px;
-          @media (max-width: $sm_screen) {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-          }
+    .list-item {
+      list-style: none;
+      margin: 20px 0;
+      &:before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/checkmark.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin-right: 20px;
+        @media (max-width: $sm_screen) {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
         }
       }
     }
+  }
+  .btn {
+    font-size: 0.5em;
   }
 }
