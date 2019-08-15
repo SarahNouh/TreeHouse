@@ -1,24 +1,31 @@
 // @Author: sarahnouh
 // @Date:   2019-08-13T03:09:20+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-14T03:05:45+02:00
+// @Last modified time: 2019-08-15T01:57:53+02:00
 .latest-project {
-  margin: 80px 0;
+  padding: 80px 0;
   position: relative;
+  @media (max-width: $xs_screen) {
+    max-width: 95%;
+    margin: auto;
+  }
   header {
     text-align: center;
     font-size: 22px;
+    margin-bottom: 6%;
     @media (min-width: $xl_screen) {
       font-size: 35px;
     }
+    @media (max-width: $xs_screen) {
+      font-size: 16px;
+    }
     .title {
-      text-transform: uppercase;
       margin-bottom: 0;
     }
     .subtitle {
       color: $light_gray;
-      margin-top: 5px;
-      font-size: 1em;
+      margin-top: 10px;
+      font-size: 0.8em;
       @media (max-width: $xs_screen) {
         max-width: 85%;
         margin: auto;
@@ -29,6 +36,9 @@
     margin-left: 14%;
     @media (min-width: $xl_screen) {
       font-size: 35px;
+    }
+    @media (max-width: $xs_screen) {
+      font-size: 12px;
     }
   }
   .list-subtitle {
@@ -75,11 +85,11 @@
   }
   .latest-project-img {
     position: absolute;
-    top: 8%;
+    top: 27%;
     right: 0;
     width: 50%;
     @media (max-width: $lg_screen) {
-      top: 20%;
+      top: 38%;
       width: 40%;
     }
     @media (max-width: $md_screen) {
@@ -91,6 +101,10 @@
       transform: scale(2);
       height: 14px;
       margin-left: 10px;
+    }
+    @media (max-width: $xs_screen) {
+      width: 10px;
+      height: 8px;
     }
   }
 }

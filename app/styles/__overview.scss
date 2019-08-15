@@ -1,7 +1,7 @@
 // @Author: sarahnouh
 // @Date:   2019-08-12T03:02:25+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-14T03:19:52+02:00
+// @Last modified time: 2019-08-15T01:53:09+02:00
 .overview {
   padding: 80px 100px;
   @media (min-width: $xl_screen) {
@@ -14,9 +14,14 @@
     text-align: center;
     margin-bottom: 65px;
     font-size: 22px;
+    @media (min-width: $xl_screen) {
+      font-size: 35px;
+    }
+    @media (max-width: $sm_screen) {
+      font-size: 16px;
+    }
     .title {
       margin: 0;
-      text-transform: uppercase;
     }
     .subtitle {
       margin-top: 5px;
