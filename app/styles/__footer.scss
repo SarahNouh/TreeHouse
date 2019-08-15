@@ -1,12 +1,12 @@
 // @Author: sarahnouh
 // @Date:   2019-08-14T05:15:45+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-14T16:52:28+02:00
+// @Last modified time: 2019-08-14T17:08:28+02:00
 
 .footer {
   .footer-content {
     column-count: 3;
-    background-color: black;
+    background-color: $dark_gray;
     color: white;
     padding: 40px 80px;
     @media (min-width: $xl_screen) {
@@ -30,9 +30,6 @@
     @media (max-width: $sm_screen) {
       border-bottom: 1px solid $silver;
       min-height: auto;
-    }
-    .column-title {
-      text-transform: uppercase;
     }
   }
   .footer-list {

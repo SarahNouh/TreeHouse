@@ -1,7 +1,7 @@
 // @Author: sarahnouh
 // @Date:   2019-08-12T03:04:05+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-14T03:03:49+02:00
+// @Last modified time: 2019-08-15T01:52:09+02:00
 .img-carousel {
   position: relative;
   img {
@@ -12,7 +12,7 @@
     @media (min-width: $xl_screen) {
       max-height: 500px;
     }
-    @media (max-width: $xs_screen) {
+    @media (max-width: $sm_screen) {
       height: 280px;
     }
   }
