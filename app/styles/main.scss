@@ -1,7 +1,7 @@
 // @Author: sarahnouh
 // @Date:   2019-08-11T01:18:09+02:00
 // @Last modified by:   sarahnouh
-// @Last modified time: 2019-08-14T17:07:21+02:00
+// @Last modified time: 2019-08-15T01:36:25+02:00
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Slab&display=swap");
 
 //colour variables
@@ -9,6 +9,7 @@ $dark_gray: #222222;
 $light_gray: #777777;
 $mint_green: #7cc576;
 $silver: #cccccc;
+$snow-white: #f9f9f9;
 
 //Responsive screen sizes variables
 $xs_screen: "425px";
@@ -20,6 +21,7 @@ $xl_screen: "2200px";
 @import "./__carousel.scss";
 @import "./__contact-us.scss";
 @import "./__client-comments.scss";
+@import "./__culture-values.scss";
 @import "./__footer.scss";
 @import "./__header.scss";
 @import "./__latest-project.scss";
@@ -55,7 +57,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.9em;
   @media (min-width: $xl_screen) {
     font-size: 30px;
   }
